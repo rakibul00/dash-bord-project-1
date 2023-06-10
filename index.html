@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard Project</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                
+                <span class="material-icons md-18">search</span>
+            </div>
+            <div class="header-left">
+                
+            </div>
+            <div class="header-right">
+                <span class="material-icons md-18">notifications</span>
+                <span class="material-icons md-18">email</span>
+                <span class="material-icons md-18">account_circle</span>
+
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- sideber -->
+        <aside id="sidaber">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons md-18">shopping_cart</span>STORT
+                </div>
+                <span class="material-icons md-18" onclick="closeSidebar()">close </span>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-itam">
+                    <span class="material-icons md-18">dashboard</span>Dashboard
+                </li>
+                <li class="sidebar-list-itam">
+                    <span class="material-icons md-18">inventory_2</span>Products
+                </li>
+                <li class="sidebar-list-itam">
+                    <span class="material-icons md-18">category</span>Category
+                </li>
+                <li class="sidebar-list-itam">
+                    <span class="material-icons md-18">groups</span>Customers
+                </li>
+                <li class="sidebar-list-itam">
+                    <span class="material-icons md-18">fact_check</span>Inventory
+                </li>
+                <li class="sidebar-list-itam">
+                    <span class="material-icons md-18">poll</span>Reports
+                </li>
+                <li class="sidebar-list-itam">
+                    <span class="material-icons md-18">settings</span>Setting
+                </li>
+            </ul>
+        </aside>
+        <!-- sideber end -->
+
+        <!-- main -->
+        <main class="main-container">
+            <div class="main-title">
+                <h2>DASHBOARD</h2>
+            </div>
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>PRODUCTS</h3>
+                        <span class="material-icons md-18">inventory_2</span>
+                    </div>
+                    <h1>249</h1>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>CATEGORY</h3>
+                        <span class="material-icons md-18">category</span>
+                    </div>
+                    <h1>25</h1>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>CUSTOMERS</h3>
+                        <span class="material-icons md-18">groups</span>
+                    </div>
+                    <h1>1500</h1>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <h3>ALERTS</h3>
+                        <span class="material-icons md-18">notification_important</span>
+                    </div>
+                    <h1>56</h1>
+                </div>
+
+
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <h2 class="chart-title">Top 5 Products</h2>
+                    <div id="bar-chart">
+                        <div id="wrapper">
+                            <div id="chart-area">
+                          
+                            </div>
+                            <div id="chart-bar">
+                          
+                            </div>
+                            
+                            <a class="link" href="https://apexcharts.com?ref=codepen">apexcharts.com</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="charts-card">
+                    <h2 class="chart-title">Products and selse Oder</h2>
+                    <div id="bar-chartt"></div>
+                </div>
+            </div>
+            <section class="container">
+                <p class="copy"> &copy; Copyright Rakib 2023, all right reserve, Develop By:<a href="https://web.facebook.com/00mRicE69" target="_blank">Md.Rakibul islam</a></p>
+            </section>
+        </main>
+        <!-- main end -->
+        
+
+
+
+    </div>
+
+    
+
+    <script src="https://cndjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
